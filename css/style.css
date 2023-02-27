@@ -3,3 +3,114 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* generic */
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+h1{
+  font-weight: 900;
+}
+
+h2{
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 400;
+}
+
+p{
+  text-align: justify;
+}
+
+/* utilities */
+.w-100{
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+}
+
+/* <!-- stile header con nav e button --> */
+header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo img{
+  vertical-align: text-bottom;
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav ul li{
+  display: inline-block;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover{
+  border-bottom: black;
+}
+
+header nav .btn{
+  margin-right: 15px;
+}
+
+.btn{
+  padding: 5px 15px;
+  border-style: none;
+  font-weight: 400;
+}
+
+.btn.blue{
+  color: white;
+  background-color:#2f7eff;
+}
+
+.btn.gray{
+  color: black;
+  background-color:#e1e1e1;
+}
+
+/* stile main */
+main{
+  margin-top: 70px;
+}
+
+/* stile jumbotron */
+.jumbotron{
+  width: 100%;
+  height: 600px;
+  background-color: #b4d0e7;
+}
