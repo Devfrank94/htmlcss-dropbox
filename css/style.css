@@ -416,3 +416,30 @@ hr{
 .drop-partner .box-text p{
   line-height: 1.5rem;
 }
+/* /section 2 */
+
+/* section 3 */
+
+.operation-dropb h2{
+  margin-bottom: 40px;
+}
+
+.card-op{
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.contain-img{
+  width: 200px;
+}
+
+.contain-img p span{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
