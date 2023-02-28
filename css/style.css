@@ -183,6 +183,11 @@ main{
   cursor: pointer;
 }
 
+.btn.white:hover{
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
 .boxjumbo .box-text i{
   margin-top: 25px;
   font-size: 30px;
@@ -390,3 +395,24 @@ hr{
 
 /* section 2 */
 
+.drop-partner .box-image{
+  width: 50%;
+}
+
+.drop-partner .box-text{
+  padding: 25px 55px;
+  width: 50%;
+}
+
+.box-text .btn.white{
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.drop-partner .box-text h3,p{
+  margin-bottom: 20px;
+}
+
+.drop-partner .box-text p{
+  line-height: 1.5rem;
+}
