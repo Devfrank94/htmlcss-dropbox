@@ -28,7 +28,7 @@ h2{
 }
 
 h3{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -112,6 +112,7 @@ header nav .btn{
   padding: 5px 15px;
   border-style: none;
   font-weight: 400;
+  text-align: center;
 }
 
 .btn.blue{
@@ -131,23 +132,25 @@ main{
 
 /* stile jumbotron */
 .jumbotron{
-  height: 600px;
-  min-height: 600px;
-  max-height: 800px;
+  height: 450px;
   background-color: #b4d0e7;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .boxjumbo{
   width: 80%;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 400px;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .boxjumbo h1{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .box-text{
@@ -160,15 +163,13 @@ main{
 }
 
 .cont-boxjumbo{
-  position: relative;
+  margin: 0 auto;
 }
 
 .cont-boxjumbo .box-image img{
-  min-width: 50%;
+  width: 500px;
+  min-width: 450px;
   max-width: 65%;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .boxjumbo .box-text .btn{
@@ -197,39 +198,159 @@ section{
   margin-top:100px;
 }
 
-.title-plan h2{
+.plans h2{
   margin-bottom: 30px;
 }
 
+.plans .radio1, .radio2{
+  margin-right: 10px;
+}
+
+.select-plan{
+  width: calc(100% / 3)
+}
+
 .select-plan .card .headcard{
+  width: 200px;
   text-align: center;
-  padding: 5px 70px;
+  padding: 8px 68px;
   border: 1px solid #d2d2d2;
   color: #4d4d4d;
 }
 
-.title-plan .select-plan{
-  margin-top: 25px;
+.plans .select-plan{
+  margin-top: 35px;
 }
 
 .card .bodycard{
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 20px 20px;
   border: 1px solid #d2d2d2;
-  max-width: 200px;
+  width: 200px;
+  height: 700px;
+  margin-top: 8px;
 }
 
-.bodycard ul li{
-  list-style-type: none;
-  margin: 15px 0;
-  font-size: 8px;
+/* stile titolo del piano (bodycard) */
+.bodycard h3{
+  margin-bottom: 15px;
+}
+
+.bodycard .price{
+  font-size: 14px;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
-.bodycard ul li::before{
-  content: '\f00c';
+.bodycard .type-plan{
+  color: #8a8a8a;
+  font-size: 12px;
 }
-/* riprendi da qui */
+
+/* position icon in cards */
+.bodycard ul .user, .folder, .pencil, .userplus, .emoji{
+  list-style-type: none;
+  margin: 20px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* icon user */
+.bodycard ul .user::before{
+  font-family: "Font Awesome 6 free";
+  content: '\f007';
+  font: var(--fa-font-regular);
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+}
+
+/* icon folder */
+.bodycard ul .folder::before{
+  font-family: "Font Awesome 6 free";
+  content: '\f07b';
+  font: var(--fa-font-regular);
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+}
+
+/* icon pencil */
+.bodycard ul .pencil::before{
+  font-family: "Font Awesome 6 free";
+  content: '\f303';
+  font: var(--fa-font-solid);
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+}
+
+/* icon userplus */
+.bodycard ul .userplus::before{
+  font-family: "Font Awesome 6 free";
+  content: '\f234';
+  font: var(--fa-font-solid);
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+}
+
+/* icon emoji */
+.bodycard ul .emoji::before{
+  font-family: "Font Awesome 6 free";
+  content: '\f118';
+  font: var(--fa-font-regular);
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+}
+
+/* stile button in cards */
+.bodycard .btn.blue{
+  font-size: 10px;
+  font-weight: 500;
+  padding: 8px 0;
+  margin: 20px 0;
+}
+
+/* stile testo sotto il blue button */
+.bodycard span{
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.bodycard span a{
+  color: #2e7efe;
+}
+
+hr{
+  width: 37px;
+  border: 1px solid #dbdbdb;
+  margin: 25px 0;
+}
+
+/* position checklist */
+.bodycard .highlightsplan ul li{
+  list-style-type: none;
+  margin: 20px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* checklist */
+.bodycard .highlightsplan ul li::before{
+  font-family: "Font Awesome 6 Free";
+  content: '\f00c';
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+  color: #2e7efe;
+  font-weight: bold;
+}
 
 
 
