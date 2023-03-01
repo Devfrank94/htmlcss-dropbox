@@ -441,7 +441,7 @@ hr{
 }
 
 .contain-img{
-  width: 200px;
+  width: 250px;
 }
 
 .contain-img p span{
@@ -571,7 +571,7 @@ hr{
 
 .footcomp h2{
   top: 45%;
-  left: 16%;
+  left: 19%;
 }
 
 /* section 5 */
@@ -618,3 +618,42 @@ hr{
   display: block;
 }
 /* /section 5 */
+
+/* footer */
+footer{
+  width: 100%;
+  background-color: black;
+  height: 450px;
+}
+
+.footlist{
+  color: white;
+  justify-content: space-around;
+  padding-top: 80px;
+  margin: 0 80px;
+}
+
+.footlist ul h3{
+  margin-bottom: 15px;
+}
+
+.footlist ul li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.language{
+  color: rgb(137, 137, 137);
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.language a{
+  color: rgb(137, 137, 137);
+}
+
+.language div{
+  padding-top: 30px;
+  border-top: 1px solid #8a8a8a;
+  width: max-content;
+}
