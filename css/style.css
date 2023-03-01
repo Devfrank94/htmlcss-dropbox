@@ -53,7 +53,7 @@ p{
 .test2{
   background-color: lightsalmon;
 }
-.test1{
+.test3{
   background-color: yellow;
 }
 
@@ -150,7 +150,7 @@ main{
 }
 
 .boxjumbo h1{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cont-boxjumbo .box-text{
@@ -174,7 +174,7 @@ main{
 
 .boxjumbo .box-text .btn{
   max-width: fit-content;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -452,33 +452,59 @@ hr{
   margin-bottom: 30px;
 }
 
-.companies .left-comp{
-  width: 500px;
-}
-
+/* calcolo per ricavare box centrale */
 .companies .cent-comp{
-  width: calc(100% - 1000px);
+  width: calc(100% - 60%);
 }
 
-.companies .right-comp{
-  width: 500px;
+/* calcolo per ricavare altezza box contenente 4 companies */
+.companies{
+  height: calc(100vw - 70vw);
 }
 
-.left-comp .comp-card{
+/* calcolo dimensioni dei container sinistra-centro-destra */
+.companies .left-comp,.right-comp{
+  width: 30%;
+}
+
+.comp-card{
   justify-content: center;
   align-items: center;
-  width: calc(500px / 4);
-  height: calc(500px / 4);
-  /* prova con absolute e relative */
+  width: calc(100% / 2);
+  height: calc(100% / 2);
 }
 
+.left-comp, .right-comp{
+  flex-wrap: wrap;
+}
+
+.cent-comp{
+  background-color: #F5F5F5;
+  overflow-y: auto;
+  padding: 40px;
+}
+
+.cent-comp img{
+  width: 25%;
+}
+
+.cent-comp p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.comp-card.active{
+  border: 10px solid #ffffff7a;
+}
+
+/* stile loghi e background color-box */
 .comp-card img{
-  width: 60%;
+  width: 50%;
   filter: invert(100%);
 }
 
 .box-green{
-  background-color: #a3d39c;
+  background-color: #a2d39b;
 }
 
 .box-bordeaux{
@@ -493,7 +519,19 @@ hr{
   background-color: red;
 }
 
+.box-cherry{
+  background-color: #d5001f;
+}
 
+.box-lightblue{
+  background-color: #b4d0e7;
+}
 
+.box-blue{
+  background-color: #0d2481;
+}
 
-
+.box-yellow{
+  background-color: #ffd830;
+}
+/* /stile loghi e background color-box */
