@@ -419,7 +419,6 @@ hr{
 /* /section 2 */
 
 /* section 3 */
-
 .operation-dropb h2{
   margin-bottom: 40px;
 }
@@ -436,8 +435,63 @@ hr{
 .contain-img p span{
   text-decoration: underline;
 }
+/* /section 3 */
 
+/* pre-title section 4 */
+.title-sec-4{
+  padding-top: 60px;
+  margin: 0 40px;
+}
 
+.title-sec-4 span a{
+  color: #2e7efe;
+}
+.title-sec-4 span{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.companies .left-comp{
+  width: 500px;
+}
+
+.companies .cent-comp{
+  width: calc(100% - 1000px);
+}
+
+.companies .right-comp{
+  width: 500px;
+}
+
+.left-comp .comp-card{
+  justify-content: center;
+  align-items: center;
+  width: calc(500px / 4);
+  height: calc(500px / 4);
+  /* prova con absolute e relative */
+}
+
+.comp-card img{
+  width: 60%;
+  filter: invert(100%);
+}
+
+.box-green{
+  background-color: #a3d39c;
+}
+
+.box-bordeaux{
+  background-color: #61092c;
+}
+
+.box-cyan{
+  background-color: #0093ce;
+}
+
+.box-red{
+  background-color: red;
+}
 
 
 
